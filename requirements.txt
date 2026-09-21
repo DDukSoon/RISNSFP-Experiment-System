@@ -1,0 +1,40 @@
+# ═══════════════════════════════════════════════════════════════════
+#   HCI-experiment requirements
+# ═══════════════════════════════════════════════════════════════════
+#
+# 설치 순서 (Windows + CUDA 환경):
+#
+#   1) llama-cpp-python 을 CUDA 빌드로 먼저 설치 (requirements.txt 에서 제외됨)
+#      CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --upgrade --force-reinstall --no-cache-dir
+#
+#   2) 이 파일로 나머지 설치
+#      pip install -r requirements.txt
+#
+#   3) (Phase 3 parametric 조건까지 돌릴 거면) Phase 2 학습 전용 의존성:
+#      pip install torch --index-url https://download.pytorch.org/whl/cu126
+#      pip install unsloth trl datasets transformers safetensors huggingface_hub
+#
+# llama-cpp-python 을 여기 넣지 않는 이유: pip 의 기본 whl 은 CPU 전용이라
+# `pip install -r requirements.txt` 로 끌려오면 GPU 가속이 꺼진 채 설치됨.
+# CUDA 빌드는 소스 컴파일이 필요하므로 CMAKE_ARGS 지정해서 수동 설치.
+# ═══════════════════════════════════════════════════════════════════
+
+# ── 서버 ──────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+
+# ── 설정 파일 파싱 (config/phase1_script.yaml, config/default.yaml) ─
+pyyaml
+
+# ── STT / TTS (ElevenLabs 단일 의존) ──────────────────────────────
+elevenlabs
+
+# ── 벡터DB / RAG (retrieval 조건) ─────────────────────────────────
+faiss-cpu
+ollama
+numpy
+
+# ── Gemini (Phase 2 학습 소스 생성: scenario_generator.py) ─────────
+google-genai

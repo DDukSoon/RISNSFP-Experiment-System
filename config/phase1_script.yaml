@@ -1,0 +1,15 @@
+# Phase 1 fixed-script questions. Order matters — each PTT press advances
+# to the next line. After the last question, the DONE message is returned
+# and the server auto-shuts down a few seconds later.
+questions:
+  - "안녕하세요. 지금부터 몇 가지 간단한 질문을 드릴게요. 편하게 말씀해 주세요. 먼저 성함이 어떻게 되세요?"
+  - "나이는 어떻게 되세요?"
+  - "어떤 일을 하고 계세요? 학생이면 전공도 같이 알려주세요."
+  - "어디에 살고 계세요?"
+  - "요즘 가장 즐겨 하는 취미가 뭐예요?"
+  - "좋아하는 음식이 있다면 알려주세요."
+  - "평소에 운동은 자주 하시는 편이세요? 어떤 운동을 좋아하세요?"
+  - "최근에 다녀온 여행 중에 가장 기억에 남는 곳이 있어요?"
+  - "요즘 자주 보는 영상이나 콘텐츠가 있어요?"
+  - "마지막으로, 요즘 가장 관심 있는 주제 하나만 이야기해 주세요."
+done_message: "네, 답변 감사합니다. 1단계 질문은 모두 끝났어요. 잠시만 기다려 주세요."

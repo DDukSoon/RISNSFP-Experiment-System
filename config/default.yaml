@@ -1,0 +1,11 @@
+# Tunables. Environment variables override these at runtime.
+model:
+  path: "model_weights/gemma-3-4b-it-q4_0.gguf"
+
+phase1:
+  shutdown_delay_sec: 8
+  script_file: "config/phase1_script.yaml"
+
+server:
+  host: "0.0.0.0"
+  port: 8000

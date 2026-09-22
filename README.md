@@ -12,8 +12,6 @@ text, the agent's reply, synthesized audio, latency, and token-usage telemetry.
 > **Authors:** Youngcheol Hwang, Haejun Kim, Jiyeong Park, Hyunok Lee, Dayoung Lee, and Woojoo Kim.
 >
 > **Paper / DOI:** [10.1145/3822517.3848656](https://doi.org/10.1145/3822517.3848656)
->
-> **Repository:** [RISNSFP-Experiment-System](https://github.com/DDukSoon/RISNSFP-Experiment-System)
 
 > **Supplementary material:** [supplementary.pdf](supplementary.pdf)
 

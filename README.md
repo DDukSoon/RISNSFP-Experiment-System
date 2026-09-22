@@ -189,7 +189,8 @@ same machine as the server is fine) with a Meta Quest 3 connected over Quest Lin
 Air Link. For download, install, server-address setup, and run steps, see
 **[RISNSFP_VR_client_setup.md](RISNSFP_VR_client_setup.md)**.
 
-- **Download:** [Dropbox build](https://www.dropbox.com/scl/fo/l8nfwcljrrvn7u8ttk2wo/AMqhsW6hFC4uwfAdu8tDJvo?rlkey=w89z9lsx00wk9as91hbvff3eo&st=xenepomk&dl=0)
+- [Download from Dropbox](https://www.dropbox.com/scl/fo/l8nfwcljrrvn7u8ttk2wo/AMqhsW6hFC4uwfAdu8tDJvo?rlkey=w89z9lsx00wk9as91hbvff3eo&st=xenepomk&dl=0)
+- [Download from Google Drive](https://drive.google.com/drive/folders/18p2FnPm92kdtwc6Daijycz4hvvjGdwt6?usp=sharing)
 
 ---
 

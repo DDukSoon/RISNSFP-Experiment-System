@@ -1,12 +1,19 @@
 # Remembering Is Not the Same as Feeling Personal: Evaluating Memory Architectures for LLM-Driven VR Embodied Conversational Agents
 
 A research testbed (FastAPI server + Unity/Meta Quest 3 client) that **compares three
-long-term-memory (LTM) architectures** for a conversational agent which must recall what a
-participant told it in an earlier session. The agent is driven entirely by voice: the Unity
+long-term-memory (LTM) architectures** for a conversational agent using participant-specific
+synthetic prior-session dialogues constructed from an initial personal interview. The agent
+is driven entirely by voice: the Unity
 client streams a WAV utterance to a single endpoint (`POST /chat`) and receives recognized
 text, the agent's reply, synthesized audio, latency, and token-usage telemetry.
 
-> **Paper:** _(to appear — link / DOI here)_
+> **Publication status:** Accepted at the **32nd ACM Symposium on Virtual Reality Software and Technology (VRST 2026)**, November 16–18, 2026, Sendai, Japan.
+>
+> **Authors:** Youngcheol Hwang, Haejun Kim, Jiyeong Park, Hyunok Lee, Dayoung Lee, and Woojoo Kim.
+>
+> **Paper / DOI:** [10.1145/3822517.3848656](https://doi.org/10.1145/3822517.3848656)
+>
+> **Repository:** [RISNSFP-Experiment-System](https://github.com/DDukSoon/RISNSFP-Experiment-System)
 
 > **Supplementary material:** [supplementary.pdf](supplementary.pdf)
 
@@ -301,17 +308,39 @@ optional `--condition NAME` and `--yes` (skip confirmation).
 
 ---
 
+## Citation
+
+If you use this research testbed or its study materials, please cite the accompanying paper:
+
+```bibtex
+@inproceedings{hwang2026remembering,
+  author    = {Hwang, Youngcheol and Kim, Haejun and Park, Jiyeong and
+               Lee, Hyunok and Lee, Dayoung and Kim, Woojoo},
+  title     = {Remembering Is Not the Same as Feeling Personal:
+               Evaluating Memory Architectures for {LLM}-Driven {VR}
+               Embodied Conversational Agents},
+  booktitle = {32nd ACM Symposium on Virtual Reality Software and Technology},
+  series    = {VRST '26},
+  year      = {2026},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3822517.3848656},
+  url       = {https://doi.org/10.1145/3822517.3848656}
+}
+```
+
+---
+
 ## Supplementary material
 
 The supplementary PDF contains the study materials referenced in the paper, including the
-Phase 1 interview questions, Phase 2 dialogue-generation prompt, Phase 3 runtime system
+Phase 1 interview questions, condensed Phase 2 dialogue-generation prompt, Phase 3 runtime system
 prompt, conversation-content coding scheme, questionnaires, and interview materials.
 
-Place the file in the repository root as `supplementary.pdf`.
+View the study materials in [supplementary.pdf](supplementary.pdf).
 
 ---
 
 ## Third-party acknowledgements
 
 - **llama.cpp** (MIT) — `training/convert_hf_to_gguf.py` and `training/convert_lora_to_gguf.py`
-  are vendored from [llama.cpp](https://github.com/ggm
+  are vendored from [llama.cpp](https://github.com/ggml-org/llama.cpp).
